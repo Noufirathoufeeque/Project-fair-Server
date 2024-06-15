@@ -1,0 +1,100 @@
+        NODE JS
+   ----------------
+ 1. its a run time environment + JS Library for JS(Run js outside browser) not a programming language.
+ 2. Features:
+  
+     * Extremely fast
+     * Asynchronus
+     * Single Threaded with event loop
+     * Highly Scalable
+     * Open Source
+ 3. Node JS Global Objects
+    * it can be accessed anywhere from node js app without exporting/importing
+    *  eg:console.log(),setTimeout()....
+ 4. Module System in Node JS:A file is considered as module in node , to access data from one file it has to import from there and before using it in another file it has to import
+    * to import Module:using  require('module name/path') method
+    * to export Module:module.exports(default) / exports(multiple)
+    * Built in Module in Nodejs
+       - fs:file system : handling file related events
+       - http:create web server
+       - https:create web server
+       - events:Work with EventEmitter 
+       - crypto:Providing tool like hashing, encryption etc.
+       - process:used to provide currently running process in the node js app
+         - Environmental Variable : used to hold configuration / confidential data regarding the project,to access Environmental variable through out app use 'process.env.variable-name'
+
+ 5. Node js Packages :
+    * Used to resolve common problems
+    * We have to install package via npm
+    * it adds package.json file, package-lock.json file, node_modules
+ 6. Backend Concepts:
+    * Client-Server Architecture : 
+    * REST-API : http requist , data in json
+    * CRUD : Create(post), Read(get), Update(put), Delete(delete)
+    * CORS : Cross Origin Resource Shairing Protocol must enable in Server
+ 7. Node js working:
+    * Event Queue
+    * Event Loop
+    *Thread Pool(Blocking REquest)
+      - Communicate with external resources like db,file system etc.
+      - I/O polling(Non blocking request)
+ 8. Node  Js
+    * Server side environment
+    * written in  c,c++ languages
+    * building fast & scalable server side app
+    * generate db queries 
+    
+
+                       EXPRESS JS - FREAME WORK OF NODE JS
+                     ---------------------------------------
+
+ 1. used in Client-Server Architecture as a web server
+ 2. steps to create a n express server
+    * Create a server folder
+    * inside folder create packag.json file : npm init -y
+    * Update package.json script value as "start" : "node index.js" instead of text
+    * Install package for creatind express we server
+      - express(used to create server) : npm i express
+      - cors (used to enable cors) : npm i cors
+      - dotenv (used to load environmental variable to process) : npm i dotenv
+
+    * create .env file ()
+    * create .gitignore file ()
+    add node_mmodule ,env to gitignore
+    * create index.js file to define express server
+       -import dotenv,cors,express
+       -create express server
+       -use core in express server
+       -use json parser
+       -create port
+       -start to li
+       -resolve get  request
+       -Run server app using the command : node index.js
+    * Create routes in server
+       - create a folder
+         - create router.js
+         - crete an object of router class of express
+         - router object is capable of definig route for the app
+         - export router from the file
+         - import router.js in index 
+         - use router in express server app
+   * Create controller folder to define logic to solve client request
+         -create a folder name controllers
+
+   * Create models to define schema and model for mongodb collection using mongoose
+        - create a folder 
+        - create a js file
+     
+                MANGOOSE - OBJECT DATA MODEL (ODM) FOR NODE JS
+         ------------------------------------------------------------
+   * install mangoose use npm i mangoose
+   * crete schema: structure of the document that we want to store in acollection
+      - create object schema class
+
+   * 
+
+
+              JSONWEBTOKEN  - for Authentication system
+           ---------------------------------------------------
+
+   * install   
